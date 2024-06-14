@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+
+
+   
+        <h1>User Information and Survey</h1>
+        <form action="/submit" method="post">
+            <!-- User Information Section -->
+            <fieldset>
+                <legend>User Information</legend>
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name" required ="name">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <br>
+    
+            <!-- Survey Questions Section -->
+            <fieldset>
+                <legend>Survey Questions</legend>
+                <!-- Question 1 -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" max="120" required>
+                <br><br>
+    
+                <!-- Question 2 -->
+                <p>What is your favorite color?</p>
+                <input type="radio" id="color_red" name="favorite_color" value="red">
+                <label for="color_red">Red</label>
+                <br>
+                <input type="radio" id="color_blue" name="favorite_color" value="blue">
+                <label for="color_blue">Blue</label>
+                <br>
+                <input type="radio" id="color_green" name="favorite_color" value="green">
+                <label for="color_green">Green</label>
+                <br>
+                <input type="radio" id="color_yellow" name="favorite_color" value="yellow">
+                <label for="color_yellow">Yellow</label>
+                <br><br>
+    
+                <!-- Question 3 -->
+                <p>Which of the following do you enjoy? (Select all that apply)</p>
+                <input type="checkbox" id="hobby_reading" name="hobbies" value="reading">
+                <label for="hobby_reading">Reading</label>
+                <br>
+                <input type="checkbox" id="hobby_traveling" name="hobbies" value="traveling">
+                <label for="hobby_traveling">Traveling</label>
+                <br>
+                <input type="checkbox" id="hobby_cooking" name="hobbies" value="cooking">
+                <label for="hobby_cooking">Cooking</label>
+                <br>
+                <input type="checkbox" id="hobby_sports" name="hobbies" value="sports">
+                <label for="hobby_sports">Sports</label>
+            </fieldset>
+            <br>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
+    
+  
+
+
+</body>
+</html>
